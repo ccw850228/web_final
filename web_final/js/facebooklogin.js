@@ -1,4 +1,8 @@
-var config = {
+
+
+  function login(){
+  	alert("hi");
+  			var config = {
     apiKey: "AIzaSyC29IcXEjMcz1GMWIb93UPkJBKmRexvowM",
     authDomain: "facebooklogin-f6d7c.firebaseapp.com",
     databaseURL: "https://facebooklogin-f6d7c.firebaseio.com",
@@ -8,7 +12,6 @@ var config = {
   };
   firebase.initializeApp(config);
 
-  function login(){
 		  	var provider = new firebase.auth.FacebookAuthProvider();
 		  	provider.setCustomParameters({
 			  'display': 'popup'
